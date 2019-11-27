@@ -9,7 +9,9 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
-mongoose.connect('localhost:27017/shop');
+//mongoose.connect("mongodb://localhost:27017/shop", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/shop", {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
