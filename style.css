@@ -1,3 +1,182 @@
-h1{
-
+*{
+	margin: 0px;
+	padding: 0px;
 }
+
+/*
+body{
+	background-image: url('https://lh3.googleusercontent.com/-QEYT2a1VA-s/V9IhCZNMfKI/AAAAAAAAAuY/kuuJ3LD4L3QG_0EwaNFhIalJPOD-C7opQCJoC/w1600-h900/black%2Band%2Bgreen%2Bshards.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+
+.welcome_text{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 350px;
+	text-align: center;
+}
+.welcome_text h1 {
+	font-weight:normal;
+}
+.welcome_text h1 span{
+	background-color: #fcc60d;
+}
+
+.main{
+	width: auto;
+	height: 100%;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat;
+	background-size: cover;
+	min-height: 3000px;
+	margin: 0 auto;
+}
+
+
+
+.fa{
+  cursor: pointer;
+}
+
+.header{
+	width: 100%;
+	overflow: auto;
+	background-color: #31353d;
+	color: #fcc508;
+	clear: both;
+	padding: 20px 50px;
+	box-sizing: border-box;	
+}
+
+.heading{
+	float: left;
+}
+
+.cart{
+	float: right;
+	text-align: center;
+}
+
+.total-text p{
+	display: inline;
+}
+
+#cart-items{
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	background-color: #31353d;
+	margin-top: 50px;
+	padding: 50px 40px;
+	z-index: 999;
+}
+
+.item{
+	position: relative;
+	float: left;
+	margin: 1%;
+	border: 1px solid #fcc60d;
+	width: 30%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item-detail h4{
+	color: #fff;
+}
+
+.item-detail p{
+	color: #fcc60d;
+	font-weight: bold;
+}
+
+.prices p{
+	display: inline;
+}
+
+.overflow{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fcc60d;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60%;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.overflow i{
+	position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.overflow:hover{
+	opacity: 1;
+}
+
+.price-display{
+	float: right;
+}
+
+.remove{
+	background-color: #00a000;
+	border-color:  #00a000;
+	border-radius: 3px;
+	color: #fff;
+	margin: 0px 5px;
+	padding: 0px 2px;
+	float: right;
+}
+
+#list-item li{
+	margin: 10px 0px;
+}
+
+
+
+
+		/*  
+		 * Rating styles
+		 */
+		 .rating {
+			width: 326px;
+			margin: 0 auto 1em;
+			font-size: 45px;
+			overflow:hidden;
+		}
+.rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+		.rating a,
+    .rating label {
+			float:right;
+			color: #aaa;
+			text-decoration: none;
+			-webkit-transition: color .4s;
+			-moz-transition: color .4s;
+			-o-transition: color .4s;
+			transition: color .4s;
+		}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+		.rating a:hover,
+		.rating a:hover ~ a,
+		.rating a:focus,
+		.rating a:focus ~ a		{
+			color: orange;
+			cursor: pointer;
+		}
+		.rating2 {
+			direction: rtl;
+		}
+		.rating2 a {
+			float:none
+		}
